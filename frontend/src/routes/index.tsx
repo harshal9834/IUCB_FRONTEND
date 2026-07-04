@@ -21,76 +21,120 @@ export const Route = createFileRoute("/")({
 
 const slides = [
   {
-    eyebrow: "Corporate Value",
-    title: "Business Benefits",
-    accent: "Drive Growth Through Trust",
-    body: "Standards, certification, testing, verification, and accreditation help businesses reduce costs, increase productivity, and unlock new markets backed by international recognition.",
-    cta: { label: "Read Case Studies", to: "/documentation" },
-    stat: { k: "+38%", v: "Market access uplift" },
+    eyebrow: "Headquartered in Tallinn, Estonia · Serving 85+ Countries",
+    title: "The Global Authority for Accreditation & Certification",
+    accent: "Independent Oversight. Global Recognition.",
+    body: "IUCB accredits Certification Bodies, Auditors, and Training Providers against ISO, Cybersecurity, and Privacy standards. We provide the independent oversight that organizations worldwide rely on to prove compliance and build institutional trust.",
+    cta: { label: "Get Accredited", to: "/services" },
+    stat: { k: "+95%", v: "Audit Pass Rate" },
   },
   {
-    eyebrow: "Auditor Networks",
-    title: "Auditor Competency Frameworks",
-    accent: "Professional Validation Tiers",
-    body: "Join a global registry of qualified lead auditors. Multi-tier validation across ISO, cybersecurity, and privacy domains with structured progression and continuous development.",
-    cta: { label: "Register as Auditor", to: "/services" },
-    stat: { k: "2,000+", v: "Certified auditors" },
-  },
+  eyebrow: "Certification Bodies",
+  title: "Achieve International Accreditation",
+  accent: "Competence. Consistency. Impartiality.",
+  body: "IUCB accredits Certification Bodies to ensure they operate in accordance with internationally recognized standards, providing confidence that audits and certifications are competent, consistent, and impartial.",
+  cta: { label: "Explore Accreditation", to: "/services" },
+  stat: { k: "85+", v: "Countries Served" },
+},
   {
-    eyebrow: "Institutional Security",
-    title: "Cryptographic Validation Engines",
-    accent: "Tamper-Proof Issuance",
-    body: "Every IUCB credential is cryptographically signed and traceable through public registries — real-time verification from any device, anywhere in the world.",
-    cta: { label: "Open Verification", to: "/verify" },
-    stat: { k: "100%", v: "Tamper-evident" },
-  },
+  eyebrow: "Instant Credential Verification",
+  title: "Instant, Cryptographic Verification",
+  accent: "Verify Every Credential with Confidence",
+  body: "Trust requires transparency. Instantly validate the authenticity and current status of any IUCB-issued credential using our secure verification console. Verify by Credential ID, QR code, or camera scan in real time.",
+  cta: { label: "Verify Authenticity", to: "/verify" },
+  stat: { k: "100%", v: "Verification Accuracy" },
+},
 ];
 
 const stats = [
   { value: "500+", label: "Accredited Organizations" },
-  { value: "80+", label: "Signatory Nations" },
+  { value: "85+", label: "Countries Served" },
   { value: "2,000+", label: "Certified Auditors" },
-  { value: "50+", label: "Standards Covered" },
+  { value: "50+", label: "International Standards" },
 ];
 
 const paths = [
-  { icon: Building2, title: "Organizations", desc: "Get accredited or certified against international standards.", to: "/services" },
-  { icon: Users, title: "Auditors", desc: "Earn individual accreditation and advance your career.", to: "/services" },
-  { icon: GraduationCap, title: "Training Entities", desc: "Accredit your courses, exams, and credentialing frameworks.", to: "/services" },
-  { icon: Search, title: "Verification Agents", desc: "Validate authenticity of any IUCB credential instantly.", to: "/verify" },
+  {
+    icon: Building2,
+    title: "Certification Bodies",
+    desc: "Achieve formal recognition of competence to audit and certify organizations against international standards.",
+    to: "/services",
+  },
+  {
+    icon: Users,
+    title: "Individual Auditors",
+    desc: "Earn globally portable credentials that validate your expertise across technical and management systems.",
+    to: "/services",
+  },
+  {
+    icon: GraduationCap,
+    title: "Training Providers",
+    desc: "Accredit your courses and examination frameworks to ensure they meet rigorous international compliance standards.",
+    to: "/services",
+  },
+  {
+    icon: Search,
+    title: "Verification Console",
+    desc: "Instantly verify the authenticity and current status of any IUCB-issued credential.",
+    to: "/verify",
+  },
 ];
 
 const problems = [
   {
-    problem: "Fragmented compliance frameworks lead to repeated audit failures and rework.",
-    solution: "One unified ecosystem covering ISO, Cybersecurity & Privacy — accept once, recognized globally.",
+    problem: "Organizations struggle with fragmented compliance and multiple accreditation requirements.",
+    solution: "IUCB provides a unified, globally recognized accreditation framework covering ISO, Cybersecurity, and Privacy standards.",
   },
   {
-    problem: "Certificates from unrecognized bodies carry no weight with regulators.",
-    solution: "IUCB-accredited certificates are independently assessed and accepted across 85+ jurisdictions.",
+    problem: "Employers and regulators need a trusted way to verify professional credentials.",
+    solution: "Every IUCB credential can be instantly verified through our secure cryptographic verification system.",
   },
   {
-    problem: "Auditing professionals lack clear progression and credential portability.",
-    solution: "Structured tiers from Associate to Lead Auditor with portable, verifiable digital credentials.",
+    problem: "Training providers and certification bodies need international recognition and credibility.",
+    solution: "IUCB accreditation demonstrates competence, impartiality, and compliance with internationally recognized standards.",
   },
 ];
 
 const trust = [
-  { icon: Globe2, title: "International Recognition", desc: "Mutual recognition arrangements across 85+ jurisdictions." },
-  { icon: Scale, title: "Independent Evaluation", desc: "Impartial assessment governed by a dedicated oversight council." },
-  { icon: Eye, title: "Transparent Assessment", desc: "Public criteria, published outcomes, and traceable decisions." },
-  { icon: Lock, title: "Secure Digital Records", desc: "Tamper-evident credentials with QR and blockchain verification." },
-  { icon: BadgeCheck, title: "Global Standards Alignment", desc: "Aligned with ISO/IEC 17011, 17021, 17024 and IAF guidance." },
-  { icon: Award, title: "Professional Competence", desc: "Validated expertise across technical and management systems." },
+  {
+    icon: Globe2,
+    title: "Global Recognition",
+    desc: "Mutual Recognition Arrangements (MLA) across 85+ jurisdictions ensure your credentials are recognized worldwide.",
+  },
+  {
+    icon: Scale,
+    title: "Independent Evaluation",
+    desc: "Impartial assessments governed by an Independent Oversight Council, completely separated from commercial auditing activities.",
+  },
+  {
+    icon: Lock,
+    title: "Tamper-Evident Security",
+    desc: "Every credential is cryptographically signed and recorded on an immutable ledger to prevent fraud and ensure verification integrity.",
+  },
+  {
+    icon: BadgeCheck,
+    title: "ISO Alignment",
+    desc: "Accreditation processes aligned with internationally recognized ISO and compliance standards.",
+  },
+  {
+    icon: Eye,
+    title: "Transparent Verification",
+    desc: "Anyone can instantly verify the authenticity and current status of an IUCB-issued credential.",
+  },
+  {
+    icon: Award,
+    title: "Professional Excellence",
+    desc: "Recognizing organizations and professionals who meet the highest international standards of competence and compliance.",
+  },
 ];
 
 const industries = [
-  { icon: Cpu, label: "IT & Technology" },
-  { icon: HeartPulse, label: "Healthcare" },
-  { icon: Banknote, label: "Financial Services" },
-  { icon: Factory, label: "Manufacturing" },
-  { icon: Landmark, label: "Government" },
-  { icon: Briefcase, label: "Professional Services" },
+  { icon: Building2, label: "Certification Bodies" },
+  { icon: Users, label: "Individual Auditors" },
+  { icon: GraduationCap, label: "Training Providers" },
+  { icon: Landmark, label: "Government & Regulators" },
+  { icon: Globe2, label: "International Organizations" },
+  { icon: Briefcase, label: "Enterprise Organizations" },
 ];
 
 /* ----------------------------- COMPONENT ----------------------------- */
@@ -220,9 +264,9 @@ function BusinessVisual() {
       </div>
       <div className="grid grid-cols-3 gap-3 mt-6">
         {[
-          { k: "+42%", v: "Audit pass rate" },
-          { k: "−31%", v: "Compliance cost" },
-          { k: "+18", v: "New markets" },
+          { k: "+95%", v: "Audit pass rate" },
+          { k: "−30%", v: "Compliance cost" },
+          { k: "85+", v: "Countries Served" },
         ].map((s) => (
           <div key={s.v} className="rounded-lg bg-white/5 border border-white/10 p-3">
             <div className="text-xl font-semibold text-gold">{s.k}</div>
@@ -242,7 +286,7 @@ function BusinessVisual() {
         ))}
       </div>
       <div className="mt-6 rounded-lg bg-gold/10 border border-gold/30 p-3 text-[11px] text-white/80">
-        Independent research: organizations with IUCB-recognized credentials win 2.4× more enterprise tenders.
+        Independent research shows organizations with IUCB-recognized credentials win 2.4× more enterprise tenders.
       </div>
     </div>
   );
@@ -354,19 +398,19 @@ function InstitutionalOverview() {
     <section className="py-20 md:py-24 bg-soft-gray">
       <div className="container-x grid lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-6">
-          <div className="eyebrow">Global Validation Initiative</div>
+          <div className="eyebrow">The Trust Framework</div>
           <h2 className="mt-3 text-3xl md:text-[2.6rem] font-semibold leading-[1.1] text-primary tracking-tight">
             Building institutional trust — one verified credential at a time.
           </h2>
           <p className="mt-5 text-muted-foreground leading-relaxed max-w-xl">
-            IUCB sits at the intersection of regulation, standards bodies, and industry — providing rigorous, independent accreditation that governments and enterprises rely on to make confident decisions.
+            IUCB sits at the intersection of regulation, standards bodies, and industry, providing the rigorous, independent assessment that governments and enterprises require to make confident decisions.
           </p>
           <div className="mt-7 grid sm:grid-cols-2 gap-4">
             {[
-              { icon: ShieldCheck, t: "ISO/IEC 17011 governed" },
-              { icon: Globe2, t: "MLA across 85+ nations" },
-              { icon: Scale, t: "Independent oversight council" },
-              { icon: BadgeCheck, t: "Public outcome registry" },
+              { icon: ShieldCheck, t: "Global Recognition" },
+              { icon: Globe2, t: "Independent Evaluation" },
+              { icon: Scale, t: "Tamper-Evident Security" },
+              { icon: BadgeCheck, t: "ISO Alignment" },
             ].map((x) => (
               <div key={x.t} className="flex items-center gap-3 rounded-lg bg-white border border-border p-3.5">
                 <div className="h-9 w-9 rounded-md bg-light-blue text-primary grid place-items-center">
@@ -382,9 +426,9 @@ function InstitutionalOverview() {
         <div className="lg:col-span-6">
           <div className="relative h-[460px]">
             <MontagePanel className="absolute top-0 left-0 w-[60%] h-[58%]" tone="primary" Icon={Landmark} caption="HQ · Tallinn" />
-            <MontagePanel className="absolute top-[8%] right-0 w-[44%] h-[40%]" tone="secondary" Icon={Globe2} caption="85+ Nations" />
-            <MontagePanel className="absolute bottom-0 right-[8%] w-[58%] h-[52%]" tone="gold" Icon={ShieldCheck} caption="Accredited" />
-            <MontagePanel className="absolute bottom-[12%] left-[6%] w-[34%] h-[34%]" tone="light" Icon={Users} caption="Auditors" />
+            <MontagePanel className="absolute top-[8%] right-0 w-[44%] h-[40%]" tone="secondary" Icon={Globe2} caption="85+ Countries" />
+            <MontagePanel className="absolute bottom-0 right-[8%] w-[58%] h-[52%]" tone="gold" Icon={ShieldCheck} caption="Global Recognition" />
+            <MontagePanel className="absolute bottom-[12%] left-[6%] w-[34%] h-[34%]" tone="light" Icon={Users} caption="Verified Credentials" />
           </div>
         </div>
       </div>
@@ -395,8 +439,8 @@ function InstitutionalOverview() {
           <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-gold/15 blur-3xl" />
           {[
             { k: "500+", v: "Accredited Organizations" },
-            { k: "80+", v: "Active Signatory Nations" },
-            { k: "2,000+", v: "Certified Industry Auditors" },
+            { k: "85+", v: "Countries Served" },
+            { k: "2,000+", v: "Certified Auditors" },
           ].map((m) => (
             <div key={m.v} className="relative flex items-baseline gap-4 border-l-2 border-gold pl-4">
               <div className="text-4xl md:text-5xl font-semibold text-gold tracking-tight">{m.k}</div>
@@ -514,34 +558,70 @@ function ProblemSolution() {
 function WhatWeOffer() {
   return (
     <section className="py-20 md:py-24 bg-primary text-white relative overflow-hidden">
-      <div className="absolute inset-0 opacity-[0.05]"
+      <div
+        className="absolute inset-0 opacity-[0.05]"
         style={{
-          backgroundImage: "linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px)",
+          backgroundImage:
+            "linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px)",
           backgroundSize: "56px 56px",
         }}
       />
       <div className="container-x relative">
         <div className="max-w-2xl">
-          <div className="text-xs font-semibold tracking-[0.2em] uppercase text-gold">What We Offer</div>
+          <div className="text-xs font-semibold tracking-[0.2em] uppercase text-gold">
+            Core Services
+          </div>
+
           <h2 className="mt-3 text-3xl md:text-4xl font-semibold leading-tight tracking-tight">
-            Accreditation, Certification & Professional Development
+            Tailored Accreditation Pathways
           </h2>
-          <p className="mt-4 text-white/75">A single ecosystem for organizational accreditation, individual certifications, and professional development pathways.</p>
+
+          <p className="mt-4 text-white/75">
+            Whether you are an organization seeking certification, a professional advancing your career, or a training provider standardizing your curriculum, IUCB provides a globally recognized accreditation framework.
+          </p>
         </div>
+
         <div className="mt-12 grid lg:grid-cols-3 gap-5">
           {[
-            { icon: Building2, title: "Accreditation Programs", desc: "Formal recognition of competence for Certification Bodies, Auditors, and Training Providers.", to: "/services" },
-            { icon: BadgeCheck, title: "Certification Schemes", desc: "Independent certification against ISO, Cybersecurity, and Privacy standards.", to: "/services" },
-            { icon: GraduationCap, title: "Professional Development", desc: "World-class courses and rigorous exams for compliance professionals.", to: "/services" },
+            {
+              icon: Building2,
+              title: "Certification Bodies",
+              desc: "Achieve formal recognition of competence to audit and certify organizations against international standards.",
+              to: "/services",
+            },
+            {
+              icon: BadgeCheck,
+              title: "Individual Auditors",
+              desc: "Earn globally portable credentials that validate your expertise across technical and management systems.",
+              to: "/services",
+            },
+            {
+              icon: GraduationCap,
+              title: "Training Providers",
+              desc: "Accredit your courses and examination frameworks to ensure they meet rigorous international compliance standards.",
+              to: "/services",
+            },
           ].map((c) => (
-            <Link key={c.title} to={c.to as never} className="group rounded-2xl bg-white/[0.06] border border-white/15 p-7 hover:bg-white/[0.1] hover:-translate-y-1 transition-all">
+            <Link
+              key={c.title}
+              to={c.to as never}
+              className="group rounded-2xl bg-white/[0.06] border border-white/15 p-7 hover:bg-white/[0.1] hover:-translate-y-1 transition-all"
+            >
               <div className="h-12 w-12 rounded-lg bg-gold/15 border border-gold/30 text-gold grid place-items-center">
                 <c.icon className="h-6 w-6" />
               </div>
-              <h3 className="mt-5 text-xl font-semibold">{c.title}</h3>
-              <p className="mt-2 text-sm text-white/70 leading-relaxed">{c.desc}</p>
+
+              <h3 className="mt-5 text-xl font-semibold">
+                {c.title}
+              </h3>
+
+              <p className="mt-2 text-sm text-white/70 leading-relaxed">
+                {c.desc}
+              </p>
+
               <div className="mt-6 inline-flex items-center gap-1 text-sm font-semibold text-gold">
-                Explore <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-0.5 transition-transform" />
+                Explore
+                <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-0.5 transition-transform" />
               </div>
             </Link>
           ))}
@@ -550,7 +630,6 @@ function WhatWeOffer() {
     </section>
   );
 }
-
 /* ----------------------------- TRUST PILLARS ----------------------------- */
 
 function TrustPillars() {
@@ -559,16 +638,33 @@ function TrustPillars() {
       <div className="container-x">
         <div className="max-w-2xl">
           <div className="eyebrow">Trust Framework</div>
-          <h2 className="mt-3 text-3xl md:text-4xl font-semibold text-navy tracking-tight">Why organizations and regulators trust IUCB</h2>
+
+          <h2 className="mt-3 text-3xl md:text-4xl font-semibold text-navy tracking-tight">
+            Why Choose IUCB
+          </h2>
+
+          <p className="mt-4 text-muted-foreground leading-relaxed">
+            Trust is earned through independence, transparency, international recognition, and secure credential verification. IUCB provides a globally recognized framework that strengthens confidence in accredited organizations and certified professionals.
+          </p>
         </div>
+
         <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {trust.map((t) => (
-            <div key={t.title} className="rounded-xl border border-border p-6 hover:border-primary hover:shadow-md hover:-translate-y-0.5 transition">
+            <div
+              key={t.title}
+              className="rounded-xl border border-border p-6 hover:border-primary hover:shadow-md hover:-translate-y-0.5 transition"
+            >
               <div className="h-10 w-10 rounded-md bg-light-blue text-primary grid place-items-center">
                 <t.icon className="h-5 w-5" />
               </div>
-              <h3 className="mt-4 font-semibold text-navy">{t.title}</h3>
-              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{t.desc}</p>
+
+              <h3 className="mt-4 font-semibold text-navy">
+                {t.title}
+              </h3>
+
+              <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                {t.desc}
+              </p>
             </div>
           ))}
         </div>
@@ -584,15 +680,31 @@ function IndustriesRow() {
     <section className="py-20 md:py-24 bg-soft-gray">
       <div className="container-x">
         <div className="max-w-2xl">
-          <div className="eyebrow">Recognized Across Sectors</div>
-          <h2 className="mt-3 text-3xl md:text-4xl font-semibold text-navy tracking-tight">From Fortune 500 to government agencies</h2>
-          <p className="mt-4 text-muted-foreground">IUCB accreditation is recognized where it matters — across regulated and high-trust industries.</p>
+          <div className="eyebrow">Global Recognition</div>
+
+          <h2 className="mt-3 text-3xl md:text-4xl font-semibold text-navy tracking-tight">
+            Supporting Every Stakeholder in the Accreditation Ecosystem
+          </h2>
+
+          <p className="mt-4 text-muted-foreground">
+            IUCB works with Certification Bodies, Individual Auditors, Training
+            Providers, Governments, Regulators, and Enterprises to strengthen
+            confidence in accredited organizations and certified professionals
+            around the world.
+          </p>
         </div>
+
         <div className="mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
           {industries.map((i) => (
-            <div key={i.label} className="rounded-xl bg-white border border-border p-6 text-center hover:border-secondary hover:shadow-md transition">
+            <div
+              key={i.label}
+              className="rounded-xl bg-white border border-border p-6 text-center hover:border-secondary hover:shadow-md transition"
+            >
               <i.icon className="h-7 w-7 mx-auto text-secondary" />
-              <div className="mt-3 text-sm font-medium text-navy">{i.label}</div>
+
+              <div className="mt-3 text-sm font-medium text-navy">
+                {i.label}
+              </div>
             </div>
           ))}
         </div>

@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { ShieldCheck, Menu, X, ChevronDown, Search } from "lucide-react";
+import { Menu, X, ChevronDown, Download } from "lucide-react";
 import { useState } from "react";
 
 type NavItem = { to: string; label: string; hasMenu?: "programs" | "resources" };
@@ -8,7 +8,6 @@ const nav: NavItem[] = [
   { to: "/about", label: "About Us" },
   { to: "/services", label: "Accreditation", hasMenu: "programs" },
   { to: "/directory", label: "Directory" },
-  { to: "/verify", label: "Verify" },
   { to: "/documentation", label: "Resources", hasMenu: "resources" },
 ];
 
@@ -21,31 +20,6 @@ const programsMega: MegaCol[] = [
       { to: "/services", label: "Auditor Accreditation" },
       { to: "/services", label: "Certification Body Accreditation" },
       { to: "/services", label: "Training Provider Accreditation" },
-    ],
-  },
-  {
-    title: "Certification Services",
-    links: [
-      { to: "/services", label: "Certificate Issuance" },
-      { to: "/services", label: "Certificate Renewal" },
-      { to: "/services", label: "Surveillance Audits" },
-      { to: "/services", label: "Scope Extension" },
-    ],
-  },
-  {
-    title: "Verification Services",
-    links: [
-      { to: "/verify", label: "Certificate Verification" },
-      { to: "/verify", label: "QR Verification" },
-      { to: "/directory", label: "Public Verification Portal" },
-    ],
-  },
-  {
-    title: "Compliance & Digital",
-    links: [
-      { to: "/documentation", label: "ISO Compliance Guidance" },
-      { to: "/services", label: "Online Applications" },
-      { to: "/verify", label: "Digital Badge Generator" },
     ],
   },
 ];
@@ -95,8 +69,13 @@ export function SiteHeader() {
       <div className="bg-white border-b border-border">
         <div className="container-x flex h-[68px] items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
-            <div className="relative h-11 w-11 rounded-full bg-primary grid place-items-center ring-2 ring-gold/70 ring-offset-2">
-              <ShieldCheck className="h-5 w-5 text-gold" />
+            <div className="relative h-14 w-14 flex-shrink-0">
+              {/* Replace src below with your actual logo path */}
+              <img 
+                src="/FINAL_LOGO_DESIGN.jpeg" 
+                alt="IUCB Logo" 
+                className="h-full w-full object-contain"
+              />
             </div>
             <div className="leading-tight">
               <div className="text-[15px] font-bold tracking-tight text-primary">IUCB</div>
@@ -105,9 +84,6 @@ export function SiteHeader() {
           </Link>
 
           <div className="hidden md:flex items-center gap-3">
-            <Link to="/directory" className="inline-flex items-center gap-1.5 h-9 px-3 text-xs font-semibold rounded-full border border-primary/30 text-primary hover:border-primary hover:bg-light-blue/40 transition">
-              <Search className="h-3.5 w-3.5" /> CertSearch
-            </Link>
             <Link to="/documentation" className="h-9 px-5 inline-flex items-center text-xs font-semibold rounded-full border border-gold/40 text-primary hover:border-gold hover:bg-gold/5 transition">
               Advisory
             </Link>
@@ -152,7 +128,7 @@ export function SiteHeader() {
                   >
                     <div className="absolute left-0 top-full w-screen">
                       <div className="bg-white border-b-4 border-gold shadow-2xl">
-                        <div className="container-x py-10 grid grid-cols-4 gap-10">
+                        <div className={`container-x py-10 grid gap-10 ${item.hasMenu === "programs" ? "grid-cols-1" : "grid-cols-4"}`}>
                           {(item.hasMenu === "programs" ? programsMega : resourcesMega).map((col) => (
                             <div key={col.title}>
                               <div className="text-[11px] font-bold tracking-[0.18em] uppercase text-primary mb-4 pb-2 border-b border-light-blue">

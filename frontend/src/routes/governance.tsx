@@ -43,14 +43,14 @@ function Governance() {
             <div className="eyebrow">Governance Bodies</div>
             <h2 className="mt-3 text-3xl md:text-4xl font-semibold text-navy">Independent oversight at every level</h2>
           </div>
-          <div className="mt-12 grid md:grid-cols-2 gap-5">
+          <div className="mt-12 grid md:grid-cols-2 gap-6">
             {bodies.map((b) => (
-              <div key={b.title} className="rounded-xl border border-border p-6 bg-card">
+              <div key={b.title} className="rounded-xl border border-border bg-card p-6 hover:border-secondary hover:shadow-md transition">
                 <div className="flex items-center gap-3">
-                  <div className="h-10 w-10 rounded-md bg-light-blue text-primary grid place-items-center">
-                    <Users className="h-5 w-5" />
+                  <div className="h-12 w-12 rounded-lg bg-light-blue text-primary grid place-items-center flex-shrink-0">
+                    <Users className="h-6 w-6" />
                   </div>
-                  <h3 className="font-semibold text-navy">{b.title}</h3>
+                  <h3 className="text-lg font-semibold text-navy">{b.title}</h3>
                 </div>
                 <p className="mt-4 text-sm text-muted-foreground leading-relaxed">{b.desc}</p>
               </div>
